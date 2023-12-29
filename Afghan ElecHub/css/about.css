@@ -1,0 +1,32 @@
+/* about */
+#about {
+    margin-top: 30px;
+}
+
+#about h3 {
+    font-weight: bold;
+    color: var(--secondary);
+    text-shadow: 0px 1px 1px black;
+}
+
+#about button {
+    width: 150px;
+    height: 45px;
+    color: var(--secondary);
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#about button:hover {
+    color: var(--dimBlue);
+    background-color: var(--secondary);
+}
+
+#about p {
+    color: var(--dimWhite);
+}
+
+/* about */
