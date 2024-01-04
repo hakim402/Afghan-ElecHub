@@ -166,6 +166,7 @@
             type="text"
             class="form-control form-control"
             placeholder="Name"
+            id="contactName"
           />
         </div>
         <div class="col-md-4 py-3 py-md-0">
@@ -173,6 +174,7 @@
             type="text"
             class="form-control form-control"
             placeholder="Email"
+            id="contactEmail"
           />
         </div>
         <div class="col-md-4 py-3 py-md-0">
@@ -180,17 +182,20 @@
             type="text"
             class="form-control form-control"
             placeholder="Phone"
+            id="contactPhone"
           />
         </div>
         <div class="form-group" style="margin-top: 30px">
           <textarea
             class="form-control"
-            id=""
+            id="message"
             rows="5"
             placeholder="Message"
           ></textarea>
         </div>
-        <div class="messagebtn text-center"><button>Message</button></div>
+        <div class="messagebtn text-center">
+          <button onclick="validateContactForm()">Message</button>
+        </div>
       </div>
     </div>
 
@@ -240,13 +245,9 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3 class="text-gradient">Afghan ElecHub</h3>
-              <p>
-                Kabul <br />
-                Herat <br />
-                Mazar <br />
-              </p>
+              <p>Kabul, Afghanistan <br /></p>
               <strong>Phone:</strong> +93 76 529 9123 <br />
-              <strong>Email:</strong>Hakimsafi@gmail.com <br />
+              <strong>Email:</strong>Hakimsafi402@gmail.com <br />
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
@@ -327,5 +328,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

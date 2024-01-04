@@ -151,10 +151,17 @@
             sequi.
           </p>
           <div class="input2 text-center">
-            <input type="name" placeholder="User Name" />
-            <input type="password" placeholder="Password" />
+            <input id="username" type="name" placeholder="User Name" required />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
           </div>
-          <p class="text-center" id="btnlogin"><a href="#">LOG IN</a></p>
+          <p class="text-center" id="btnlogin" onclick="validateLoginForm()">
+            <a href="#">LOG IN</a>
+          </p>
           <p class="text-center">Forgot Password<a href="#">Click</a></p>
         </div>
       </div>
@@ -179,13 +186,9 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3 class="text-gradient">Afghan ElecHub</h3>
-              <p>
-                Kabul <br />
-                Herat <br />
-                Mazar <br />
-              </p>
+              <p>Kabul, Afghanistan <br /></p>
               <strong>Phone:</strong> +93 76 529 9123 <br />
-              <strong>Email:</strong>Hakimsafi@gmail.com <br />
+              <strong>Email:</strong>Hakimsafi402@gmail.com <br />
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
@@ -266,5 +269,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

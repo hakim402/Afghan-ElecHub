@@ -147,13 +147,19 @@
         <div class="col-md-7 py-3 py-md-0" id="side2">
           <h3 class="text-center">Create Account</h3>
           <div class="input2 text-center">
-            <input type="name" placeholder="Name" />
-            <input type="name" placeholder="User Name" />
-            <input type="number" placeholder="Phone" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input type="name" id="RegName" placeholder="Name" />
+            <input type="name" id="RegUserName" placeholder="User Name" />
+            <input type="number" id="RegPhone" placeholder="Phone" />
+            <input type="email" id="RegEmail" placeholder="Email" />
+            <input type="password" id="RegPassword" placeholder="Password" />
           </div>
-          <p class="text-center" id="btnlogin"><a href="#">SIGN UP</a></p>
+          <p
+            class="text-center"
+            id="btnlogin"
+            onclick="validateRegistrationForm()"
+          >
+            <a href="#">SIGN UP</a>
+          </p>
         </div>
       </div>
     </div>
@@ -177,13 +183,9 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3 class="text-gradient">Afghan ElecHub</h3>
-              <p>
-                Kabul <br />
-                Herat <br />
-                Mazar <br />
-              </p>
+              <p>Kabul, Afghanistan <br /></p>
               <strong>Phone:</strong> +93 76 529 9123 <br />
-              <strong>Email:</strong>Hakimsafi@gmail.com <br />
+              <strong>Email:</strong>Hakimsafi402@gmail.com <br />
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
@@ -264,5 +266,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

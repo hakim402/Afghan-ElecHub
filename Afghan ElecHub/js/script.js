@@ -1,33 +1,51 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.getElementById("product-carousel");
-  const container = carousel.querySelector(".carousel-container");
-  const items = container.querySelectorAll(".col-md-3");
-  const totalItems = items.length;
-  let currentIndex = 0;
+// Login Form Validation
+function validateLoginForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
 
-  function showItem(index) {
-    const position = -index * 100 + "%";
-    container.style.transform = "translateX(" + position + ")";
+  if (username === "" || password === "") {
+    alert("Please fill in both username and password.");
+  } else {
+    alert("Login Successful!");
   }
+}
 
-  function next() {
-    currentIndex = (currentIndex + 1) % totalItems;
-    showItem(currentIndex);
+// Registration From Validation
+function validateRegistrationForm() {
+  var RegName = document.getElementById("RegName").value;
+  var RegUserName = document.getElementById("RegUserName").value;
+  var RegPhone = document.getElementById("RegPhone").value;
+  var RegEmail = document.getElementById("RegEmail").value;
+  var RegPassword = document.getElementById("RegPassword").value;
+
+  if (
+    RegName === "" ||
+    RegUserName === "" ||
+    RegPhone === "" ||
+    RegEmail === "" ||
+    RegPassword === ""
+  ) {
+    alert("Please fill all the feild.");
+  } else {
+    alert("Register Successful!");
   }
+}
 
-  function prev() {
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    showItem(currentIndex);
+// Contact form Validation
+function validateContactForm() {
+  var contactName = document.getElementById("contactName").value;
+  var contactEmail = document.getElementById("contactEmail").value;
+  var contactPhone = document.getElementById("contactPhone").value;
+  var message = document.getElementById("message").value;
+
+  if (
+    contactName === "" ||
+    contactEmail === "" ||
+    contactPhone == "" ||
+    message === ""
+  ) {
+    alert("Please fill all the feild");
+  } else {
+    alert("Message successfully send");
   }
-
-  // Add event listeners for next and previous buttons
-  const nextButton = document.createElement("button");
-  nextButton.textContent = "Next";
-  nextButton.addEventListener("click", next);
-  carousel.appendChild(nextButton);
-
-  const prevButton = document.createElement("button");
-  prevButton.textContent = "Prev";
-  prevButton.addEventListener("click", prev);
-  carousel.appendChild(prevButton);
-});
+}
